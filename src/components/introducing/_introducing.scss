@@ -1,0 +1,15 @@
+@use "../../style/main.scss";
+
+.introducing {
+    margin:1rem;
+    margin-top:3rem;
+}
+
+.introducing-img {
+    display:flex;
+    justify-content:center;
+    
+    img {
+        width:8%;
+    }
+}

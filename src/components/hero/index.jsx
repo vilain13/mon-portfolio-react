@@ -25,7 +25,7 @@ function Home() {
     <section className="hero">
       <img className="hero_img" src={imgHero} alt="hero Matrix" />
       <div className="hero_overlay">
-        <h1>GUILLERMIN GILL<br />Développeur Web</h1>
+        <h1>GUILLERMIN GILL<br />Développeur Intégrateur Web</h1>
         <button
           className="hero_button"
           onClick={() => window.location.href='mailto:guillerg680@gmail.com'}

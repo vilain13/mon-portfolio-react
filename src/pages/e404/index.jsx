@@ -1,5 +1,5 @@
 
-import Hero from '../../components/hero';
+
 
 
  
@@ -7,7 +7,7 @@ function Home() {
 
     return (
         <main>
-            <Hero />
+            <p>erruer de page</p>
             
         </main>     
     

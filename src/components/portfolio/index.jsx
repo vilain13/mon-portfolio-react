@@ -13,12 +13,12 @@ function PortfolioProjects() {
   }, []);
 
   return (
-    <section>
+    <section className="portfolio">
       <div className='portfolio-title'>
         <h2>PROJETS REALISES</h2>
         <p> dans le cadre de ma formation Openclassrooms : </p>
         
-        <div className='introducing-img portfolio-img'>
+        <div className='portfolio-img'>
             <img  src={imgVoyage} alt="Icone" />
         </div>
       </div>

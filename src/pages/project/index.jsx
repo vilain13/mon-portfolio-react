@@ -8,11 +8,36 @@ const Project = () => {
   
     return (
         <main>
-            <section>
-                <div>
-                <h1>{project.title}</h1> {/* Affiche le titre du projet */}
-                {/* Ajoutez d'autres informations si nécessaire */}
+            <section className='project'>
+                <div className='project-img'>
+                    {project.img && <img src={project.img} alt={`Illustration de ${project.title}`} />}
                 </div>
+                
+
+                <h2>{project.title}</h2> 
+
+                {project.github && (
+                        <a className='project-button'
+                            href={project.github} 
+                            target="_blank" 
+                            rel="noopener noreferrer" /* mesure de sécurité lorsqu'un lien pointe vers une nouvelle page ( target blanck ) */
+                        >
+                            Voir sur GitHub
+                        </a>
+                    )}
+
+                <h3>Contexte du projet</h3>   
+                <p>{project.context}</p> 
+
+                <h3>Compétences acquises</h3>   
+                <div className='project-competences'>
+                    {project.competences && project.competences.map((competence, index) => (
+                                <p key={index}>{competence}</p>
+                            ))}
+                </div>
+                
+            
+            
             </section>
           
 

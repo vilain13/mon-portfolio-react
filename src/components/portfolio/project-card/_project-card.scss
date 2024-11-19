@@ -6,14 +6,14 @@
   background-color: main.$third-background-color;
   border: main.$primary-color 1px solid;
   opacity: 0;
-  transform: scale(0); /* Commence à une échelle de 0*/
+  transform: scale(0); 
 
   &__text {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
 
-/* Animation de grossissement au moment où on ajoute la classe active */
+/* Animation déclenchement animation */
 .card.active {
   opacity: 1;
   animation: scaleIn 1s ease-out forwards;
